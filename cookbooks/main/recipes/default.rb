@@ -1,17 +1,13 @@
+require_recipe "elasticsearch"
+
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
 #  }
 #end
 
-# uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
-# require_recipe "sphinx"
-
 #uncomment to turn on memcached
 # require_recipe "memcached"
-
-#uncomment ot run the riak recipe
-# require_recipe "riak"
 
 #uncomment to run the authorized_keys recipe
 #require_recipe "authorized_keys"
@@ -21,9 +17,6 @@
 
 #uncomment to run the ssmtp recipe
 #require_recipe "ssmtp"
-
-#uncomment to run the sunspot recipe
-# require_recipe "sunspot"
 
 #uncomment to run the exim recipe
 #exim_auth "auth" do
@@ -63,9 +56,6 @@
 #uncomment to include the mysql_administrative_tools recipe
 # additional configuration of this recipe is required
 #require_recipe "mysql_administrative_tools"
-
-#uncomment to include the Elasticsearch recipe
-#require_recipe "elasticsearch"
 
 # To install specific plugins to Elasticsearch see below as an example
 #es_plugin "cloud-aws" do
